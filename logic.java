@@ -238,7 +238,28 @@ public class logic {
             System.out.println("Ingrese una opción valida");
         }
     }
+
+
+
+    public boolean Reiniciar() {
+        System.out.println("¿Deseas reiniciar el programa? (s/n): ");
+        String respuesta = sc.next();
+        return respuesta.equalsIgnoreCase("s");
+    }
     
-    
+
+    public boolean Terminar_o_no() {
+        System.out.println("¿Deseas reiniciar el programa o finalizarlo? (r/f): ");
+        String respuesta = sc.next();
+        if (respuesta.equalsIgnoreCase("r")) {
+            return true;
+        } else if (respuesta.equalsIgnoreCase("f")) {
+            return false;
+        } else {
+            System.out.println("Opción no válida, finalizando el programa por defecto.");
+            return false;
+        }
+    }
+
 
 }
