@@ -20,7 +20,7 @@ public class main {
         }
 
         
-        System.out.println("Programa terminado");
+        System.out.println("Calculadora cerrada");
         sc.close();
     }
 }

@@ -256,7 +256,7 @@ public class logic {
         } else if (respuesta.equalsIgnoreCase("f")) {
             return false;
         } else {
-            System.out.println("Opción no válida, finalizando el programa por defecto.");
+            System.out.println("Opción no válida, cerrando calculadora.");
             return false;
         }
     }
